@@ -9,4 +9,4 @@ else
 	tor & sleep 1; killall tor ; echo "Your hostname:" ; cat /var/lib/tor/hidden_service/hostname
 fi
 
-tor
+sudo -u debian-tor tor

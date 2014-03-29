@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y tor
 RUN apt-get -y upgrade
 ADD files/torrc /etc/tor/torrc
 EXPOSE 9050
-ENTRYPOINT ["tor"]
+ENTRYPOINT ["sudo -u tor debian-tor"]
