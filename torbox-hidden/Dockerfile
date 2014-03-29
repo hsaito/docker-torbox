@@ -5,4 +5,5 @@ ADD files/torrc /etc/tor/torrc
 RUN mkdir -p /var/run/sshd
 RUN echo root:changeme | chpasswd
 ADD files/startup.sh /startup.sh
+ADD files/sshd-key-gen.sh /sshd-key-gen.sh
 ENTRYPOINT /startup.sh
