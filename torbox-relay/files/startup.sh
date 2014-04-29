@@ -1,2 +1,4 @@
 #!/bin/sh
-sudo -u debian-tor tor
+service tor start
+sleep 1
+tail -f /var/log/tor/log
