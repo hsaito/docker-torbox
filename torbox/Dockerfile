@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stable
 MAINTAINER Hideki Saito <hideki@hidekisaito.com>
 RUN echo "deb http://deb.torproject.org/torproject.org wheezy main" >> /etc/apt/sources.list
 RUN gpg --keyserver keys.gnupg.net --recv 886DDD89
