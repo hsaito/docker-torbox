@@ -13,12 +13,19 @@ This version provides SOCKS proxy. Please note that this does not automatically 
 
 This is more useful for application such as Bitmessage and others that has settings for SOCKS.
 
-Pre-built trusted build is available at:
-https://index.docker.io/u/hsaito/torbox/
+Pre-built build is available at:
+https://registry.hub.docker.com/u/hsaito/torbox/
 
 torbox-relay
 ------------
 This version does not provide SOCKS proxy, but provides relay capability.
 
-Pre-built trusted build is available at:
-https://index.docker.io/u/hsaito/torbox-relay/
+Pre-built build is available at:
+https://registry.hub.docker.com/u/hsaito/torbox-relay/
+
+torbox-hidden
+-------------
+This version provides hidden service. It currently used lighttpd. Tor behaviors are different from above two as this container will try to obtain .onion address when it is not present at first run. Container log will display effective .onion address every time it is started.
+
+Pre-built build is available at:
+https://registry.hub.docker.com/u/hsaito/torbox-hidden/
